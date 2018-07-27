@@ -13,7 +13,14 @@ amqp.connect('amqp://localhost', (err, conn) => {
 		ch.sendToQueue(q, new Buffer('Hello World!'));
 		console.log("  Sent 'Hello World!'");
 	});
+	
+	//Close Connection and exit
+	setTimeout(() => {
+		conn.close();
+		process.exit(0);
+	}, 500);
 });
+
 
 
 

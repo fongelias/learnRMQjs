@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fongelias/learnRMQjs/issues"
   },
-  "homepage": "https://github.com/fongelias/learnRMQjs#readme"
+  "homepage": "https://github.com/fongelias/learnRMQjs#readme",
+  "devDependencies": {
+    "amqplib": "^0.5.2"
+  }
 }

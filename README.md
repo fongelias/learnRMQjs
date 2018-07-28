@@ -13,6 +13,8 @@ Default users will have username `guest` and password `guest`
 
 Stop the server with `rabbitmqctl stop`
 
+Download the javascript client with npm: `npm install amqplib`
+
 ## Conf
 Configuration files are located at `etc/rabbitmq/rabbitmq-env.conf`
 

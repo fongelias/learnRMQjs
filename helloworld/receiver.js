@@ -14,6 +14,12 @@ amqp.connect('amqp:localhost', (err, conn) => {
 		ch.consume(queueName, (msg) => {
 			console.log("\tReceived: %s", msg.content.toString());
 		}, { noAck: true});
+
+		//Close Connection and exit
+		setTimeout(() => {
+			conn.close();
+			process.exit(0);
+		}, 500);
 	});
 });
 

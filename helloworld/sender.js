@@ -11,7 +11,7 @@ amqp.connect('amqp://localhost', (err, conn) => {
 		ch.assertQueue(queueName, { durable: false });
 		//Send to queue and write to log
 		ch.sendToQueue(queueName, new Buffer('Hello World!'));
-		console.log("  Sent 'Hello World!'");
+		console.log("    Sent 'Hello World!'");
 	});
 	
 	//Close Connection and exit
